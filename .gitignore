@@ -1,0 +1,20 @@
+# Node.js files
+node_modules
+coverage
+coverage.json
+package-lock.json
+
+# Hardhat files
+cache
+artifacts
+typechain
+typechain-types
+
+# Local env files
+.env
+.env.local
+.env.dev.local
+
+# System Files
+.DS_Store
+Thumbs.db
