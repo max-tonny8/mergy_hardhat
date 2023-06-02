@@ -66,6 +66,16 @@ export default config;
 
 Make sure to adjust the configuration according to your project's needs.
 
+## Generating merged contracts
+
+To generate smart contracts, run the following command:
+
+```
+npx hardhat merger
+```
+
+This will generate the merged contracts in the specified `outDir` directory.
+
 ## License
 
 This plugin is open-source and available under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
@@ -76,4 +86,4 @@ This plugin is open-source and available under the [MIT License](LICENSE). Feel 
 
 ---
 
-I hope this plugin simplifies your development workflow by automatically generating marged smart contracts in Solidity. If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/nazarkhatsko/hardhat-merger/issues). Contributions are also welcome!
+I hope this plugin simplifies your development workflow by automatically generating merged smart contracts in Solidity. If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/nazarkhatsko/hardhat-merger/issues). Contributions are also welcome!
