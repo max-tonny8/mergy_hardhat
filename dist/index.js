@@ -8,10 +8,10 @@ const filesystem_1 = require("./filesystem");
     const { config } = hre;
     const { merger } = config;
     hre.config.merger = {
-        outDir: merger?.outDir || "merged",
-        inDir: merger?.inDir || "contracts",
-        includeContracts: merger?.includeContracts || ["*"],
-        excludeContracts: merger?.excludeContracts || [],
+        outDir: merger?.outDir ?? "merged",
+        inDir: merger?.inDir ?? "contracts",
+        includeContracts: merger?.includeContracts ?? ["*"],
+        excludeContracts: merger?.excludeContracts ?? [],
     };
 });
 (0, config_1.task)("merger", async (args, hre) => {

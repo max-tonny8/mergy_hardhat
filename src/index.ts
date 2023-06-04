@@ -25,10 +25,10 @@ extendEnvironment(async hre => {
   const { merger } = config;
 
   hre.config.merger = {
-    outDir: merger?.outDir || "merged",
-    inDir: merger?.inDir || "contracts",
-    includeContracts: merger?.includeContracts || ["*"],
-    excludeContracts: merger?.excludeContracts || [],
+    outDir: merger?.outDir ?? "merged",
+    inDir: merger?.inDir ?? "contracts",
+    includeContracts: merger?.includeContracts ?? ["*"],
+    excludeContracts: merger?.excludeContracts ?? [],
   };
 });
 

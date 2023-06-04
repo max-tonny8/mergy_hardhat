@@ -8,5 +8,5 @@ export async function mkdir(path: string): Promise<void> {
 }
 
 export async function write(path: string, data: string): Promise<void> {
-  fs.writeFile(path, data, { flag: "w" });
+  await fs.writeFile(path, data, { flag: "w" });
 }
